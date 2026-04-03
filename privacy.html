@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — CleanSnap</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-white text-gray-800">
+  <nav class="bg-gray-900 py-4">
+    <div class="max-w-4xl mx-auto px-4 flex items-center gap-2">
+      <a href="/" class="flex items-center gap-2">
+        <img src="logo.png" alt="CleanSnap" class="w-8 h-8 rounded-lg">
+        <span class="text-white font-bold text-lg">CleanSnap</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold mb-2">Privacy Policy</h1>
+    <p class="text-gray-500 mb-8">Last updated: March 28, 2026</p>
+
+    <div class="prose prose-gray max-w-none space-y-6">
+      <section>
+        <h2 class="text-xl font-semibold mb-3">1. Who We Are</h2>
+        <p>CleanSnap is a marketplace platform connecting customers with independent cleaning professionals in the United Kingdom. We operate as an intermediary — we facilitate the connection but do not provide cleaning services directly.</p>
+        <p>Contact: <a href="mailto:support@cleansnap.co.uk" class="text-blue-600">support@cleansnap.co.uk</a></p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">2. Data We Collect</h2>
+        <p>We collect the following personal data:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Account information:</strong> Name, email, phone number, password (hashed)</li>
+          <li><strong>Address data:</strong> Property addresses for cleaning service delivery</li>
+          <li><strong>Photos:</strong> Room photos uploaded for AI quote generation (stored on AWS S3)</li>
+          <li><strong>Payment data:</strong> Processed securely via Stripe — we never store card numbers</li>
+          <li><strong>Device data:</strong> Push notification tokens for service updates</li>
+          <li><strong>Cleaner-specific data:</strong> National Insurance number (encrypted), bank details (encrypted), DBS certificate, identity documents</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">3. How We Use Your Data</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>To create and manage your account</li>
+          <li>To generate AI-powered cleaning quotes from your photos</li>
+          <li>To match you with available cleaners in your area</li>
+          <li>To process payments and manage bookings</li>
+          <li>To send push notifications about your bookings</li>
+          <li>To comply with legal and regulatory requirements (HMRC, DAC7)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">4. AI Photo Analysis</h2>
+        <p>When you upload room photos, they are analysed by AI services (Google Gemini and OpenAI GPT-4o) to generate accurate cleaning quotes. Photos are:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Transmitted securely via HTTPS</li>
+          <li>Processed for the sole purpose of quote generation</li>
+          <li>Stored on AWS S3 with encryption at rest</li>
+          <li>Deleted upon account deletion request</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">5. Third-Party Services</h2>
+        <p>We use the following third-party services to operate CleanSnap:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Stripe:</strong> Payment processing and cleaner payouts</li>
+          <li><strong>AWS (S3):</strong> Photo and document storage</li>
+          <li><strong>Google Gemini / OpenAI:</strong> AI photo analysis for quotes</li>
+          <li><strong>Expo:</strong> Push notifications</li>
+          <li><strong>Railway:</strong> Application hosting</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">6. Data Retention</h2>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Account data: retained while your account is active</li>
+          <li>Booking data: retained for 7 years (HMRC requirement)</li>
+          <li>Photos: retained while your account is active, deleted on account deletion</li>
+          <li>Financial data: retained for 7 years (legal requirement)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">7. Your Rights (UK GDPR)</h2>
+        <p>You have the right to:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li><strong>Access:</strong> Request a copy of all your personal data</li>
+          <li><strong>Rectification:</strong> Correct inaccurate personal data</li>
+          <li><strong>Erasure:</strong> Request deletion of your account and data (30-day cooling period)</li>
+          <li><strong>Portability:</strong> Export your data in a machine-readable format</li>
+          <li><strong>Objection:</strong> Object to processing based on legitimate interests</li>
+        </ul>
+        <p>You can exercise these rights directly in the app via Profile → Data & Privacy, or by contacting us at <a href="mailto:support@cleansnap.co.uk" class="text-blue-600">support@cleansnap.co.uk</a>.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">8. Security</h2>
+        <p>We protect your data with:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>HTTPS encryption for all data in transit</li>
+          <li>Encryption at rest for sensitive data (NI numbers, bank details)</li>
+          <li>JWT-based authentication with refresh token rotation</li>
+          <li>Rate limiting on all public endpoints</li>
+          <li>Row-level security — users can only access their own data</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">9. Children</h2>
+        <p>CleanSnap is not intended for use by anyone under the age of 18. We do not knowingly collect data from children.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">10. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. We will notify you of significant changes via push notification or email.</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-3">11. Contact</h2>
+        <p>For privacy-related questions or to exercise your rights:</p>
+        <p>Email: <a href="mailto:support@cleansnap.co.uk" class="text-blue-600">support@cleansnap.co.uk</a></p>
+        <p>ICO: If you are not satisfied with our response, you can contact the Information Commissioner's Office at <a href="https://ico.org.uk" class="text-blue-600" target="_blank">ico.org.uk</a>.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-400 py-8 mt-12">
+    <div class="max-w-4xl mx-auto px-4 text-center text-sm">
+      <p>&copy; 2026 CleanSnap. All rights reserved.</p>
+      <div class="mt-2 space-x-4">
+        <a href="/" class="hover:text-white">Home</a>
+        <a href="/privacy.html" class="hover:text-white">Privacy Policy</a>
+        <a href="https://cleaning-app-production.up.railway.app/api/v1/legal/documents/type/TERMS_OF_SERVICE" class="hover:text-white" target="_blank">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
