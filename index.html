@@ -439,22 +439,40 @@
           <ul class="space-y-2 text-sm">
             <li><a href="#how-it-works" class="hover:text-white transition">How It Works</a></li>
             <li><a href="#for-cleaners" class="hover:text-white transition">Become a Cleaner</a></li>
-            <li><a href="mailto:support@cleansnap.co.uk" class="hover:text-white transition">Contact Us</a></li>
+            <li><a href="/support" class="hover:text-white transition">Support</a></li>
+            <li><a href="/delete-account" class="hover:text-white transition">Delete your account</a></li>
           </ul>
         </div>
         <div>
           <h4 class="text-white font-semibold mb-4">Legal</h4>
+          <!-- These four used to point straight at the JSON API, so clicking
+               "Terms of Service" served 19 KB of escaped markup. They are now
+               pages that render the same document the app shows, fetched live,
+               so a new version published through seed-legal appears here with
+               no deploy. -->
           <ul class="space-y-2 text-sm">
-            <li><a href="https://cleaning-app-production.up.railway.app/api/v1/legal/documents/type/TERMS_OF_SERVICE" class="hover:text-white transition" target="_blank">Terms of Service</a></li>
-            <li><a href="/privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
-            <li><a href="https://cleaning-app-production.up.railway.app/api/v1/legal/documents/type/COOKIE_POLICY" class="hover:text-white transition" target="_blank">Cookie Policy</a></li>
-            <li><a href="https://cleaning-app-production.up.railway.app/api/v1/legal/documents/type/CLEANER_AGREEMENT" class="hover:text-white transition" target="_blank">Cleaner Agreement</a></li>
+            <li><a href="/terms" class="hover:text-white transition">Terms of Service</a></li>
+            <li><a href="/privacy" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="/cookies" class="hover:text-white transition">Cookie Policy</a></li>
+            <li><a href="/cleaner-agreement" class="hover:text-white transition">Cleaner Agreement</a></li>
           </ul>
         </div>
       </div>
-      <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-        <p class="text-sm">&copy; 2026 CleanSnap. All rights reserved.</p>
-        <p class="text-xs">CleanSnap is a marketplace connecting customers with independent cleaning professionals.</p>
+      <!-- Statutory trading disclosures: Companies Act 2006 and the Company,
+           Limited Liability Partnership and Business (Names and Trading
+           Disclosures) Regulations 2015 require the registered name, number,
+           place of registration and registered office on the website. It is
+           also what Apple checks when an Organization enrolment claims this
+           domain. -->
+      <div class="border-t border-gray-800 pt-8 text-xs leading-relaxed space-y-1">
+        <p><strong class="text-gray-300">CleanSnap</strong> is a trading name of <strong class="text-gray-300">Aureus Solidus Limited</strong>, a company registered in England and Wales, company number <strong class="text-gray-300">17206167</strong>.</p>
+        <p>Registered office: Flat 1, 16 Churchgate Street, Soham, Ely, Cambridgeshire, CB7 5DS</p>
+        <p>Registered with the Information Commissioner&rsquo;s Office, reference <strong class="text-gray-300">ZC205447</strong>.</p>
+        <p>Contact: <a href="mailto:support@cleansnap.co.uk" class="hover:text-white underline">support@cleansnap.co.uk</a></p>
+        <div class="pt-4 flex flex-col sm:flex-row justify-between gap-2 text-gray-500">
+          <p>&copy; 2026 Aureus Solidus Limited. All rights reserved.</p>
+          <p>CleanSnap is a marketplace connecting customers with independent cleaning professionals. We do not provide cleaning services ourselves.</p>
+        </div>
       </div>
     </div>
   </footer>
