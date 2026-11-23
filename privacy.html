@@ -33,10 +33,203 @@
 
   <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <h1 class="text-3xl font-extrabold text-gray-900 mb-1">Privacy Policy</h1>
-    <p id="legal-meta" class="text-sm text-gray-500 mb-8">Loading the current version&hellip;</p>
+    <p id="legal-meta" class="text-sm text-gray-500 mb-8">Version 1.7 &mdash; in force since 19 September 2026</p>
 
-    <div id="legal-content" class="doc">
-      <p class="text-gray-500">Loading&hellip;</p>
+    <div id="legal-content" class="doc" data-version="1.7">
+      <!-- legal-snapshot:begin PRIVACY_POLICY -->
+<h2>1. Who We Are</h2>
+<p>CleanSnap ("we", "us", "our") is a trading name of <strong>Aureus Solidus Limited</strong>, a company registered in England and Wales (company number 17206167). Registered office: Flat 1, 16 Churchgate Street, Soham, Ely, Cambridgeshire, CB7 5DS. We operate a platform connecting Customers with independent Cleaners.</p>
+<p>We are the data controller for the personal data we collect through our mobile application and website. This means we decide how and why your personal data is processed.</p>
+<p>We are registered with the Information Commissioner's Office (ICO). Registration number: <strong>ZC205447</strong>.</p>
+<p><strong>Contact us about data protection:</strong> <a href="mailto:support@cleansnap.co.uk">support@cleansnap.co.uk</a></p>
+
+<h2>2. What Data We Collect</h2>
+<p>We collect and process the following categories of personal data:</p>
+
+<h3>Information you provide directly</h3>
+<table>
+  <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>Full name, email address</td><td>Account creation and communication</td></tr>
+    <tr><td>Phone number</td><td>Booking updates, verification</td></tr>
+    <tr><td>Password (stored only as a bcrypt hash)</td><td>Account security</td></tr>
+    <tr><td>Property address and details (including bedrooms/bathrooms, parking information, pet information, and any access instructions you choose to provide)</td><td>Providing cleaning quotes and enabling the Cleaner to carry out the booking</td></tr>
+    <tr><td>Photos of your property (and any notes you attach to them)</td><td>AI-generated cleaning quotes and photo validation</td></tr>
+    <tr><td>Profile photo (avatar)</td><td>Your profile</td></tr>
+    <tr><td>Payment card details</td><td>Processing payments &mdash; card details are collected on your device directly by Stripe; they never reach our servers and we never store them</td></tr>
+    <tr><td>Reviews and ratings</td><td>Quality assurance and trust</td></tr>
+    <tr><td>Messages (including photos you attach) exchanged with the other party to a booking</td><td>Communication between Customers and Cleaners</td></tr>
+    <tr><td>Complaints, including any photos you submit as evidence</td><td>Investigating and resolving service issues</td></tr>
+  </tbody>
+</table>
+
+<h3>Additional data from Cleaners</h3>
+<table>
+  <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>National Insurance number (required to register as a Cleaner)</td><td>Identity verification and HMRC reporting (stored encrypted with AES-256-GCM)</td></tr>
+    <tr><td>Date of birth and home address</td><td>Required for HMRC digital-platform reporting (Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023, sometimes known as "DAC7")</td></tr>
+    <tr><td>Verification documents: identity document (a passport, current or expired, or an Irish passport card; or a UK photocard driving licence where your right to work is shown by a share code), Basic DBS certificate, Public Liability Insurance certificate</td><td>Vetting and safety &mdash; stored in private storage, reviewed by our team, and required before you can accept jobs</td></tr>
+    <tr><td>Right-to-work check: the share code you generate on gov.uk (for a Cleaner who is not a British or Irish citizen), checked with the date of birth you gave us; or, for a British or Irish citizen, your passport or passport card &mdash; or, if you have none, the documents the Home Office lists for that case (a UK, Channel Islands, Isle of Man or Irish birth or adoption certificate, or a certificate of registration or naturalisation, with an official document showing your name and National Insurance number); the outcome and date of our check, that we confirmed your likeness on a video call, any date on which your permission to work ends, and a copy of the page the government service showed us or of the documents we checked</td><td>Confirming your legal right to work in the United Kingdom before you can accept jobs, which UK immigration law requires of us as an online matching service from 1 October 2026 (section 11 of the Cleaner Agreement). A member of our team makes the check; the photograph on the government record is compared with you by a person on a video call, never by software, and the call is not recorded. The copy is kept in private storage as the Home Office requires (see section 5 for how long); the share code is stored encrypted with AES-256-GCM until the check is made, then erased</td></tr>
+    <tr><td>Professional bio, experience, service types, service area</td><td>Profile for Customers to review and job matching</td></tr>
+    <tr><td>Availability schedule</td><td>Job matching</td></tr>
+    <tr><td>Earnings records</td><td>Paying you and meeting our tax-reporting obligations</td></tr>
+    <tr><td>Engagement records: for each job you accept, how you came by it, when you accepted and started it, whether the start was inside the agreed time slot, and how it ended</td><td>Working out the two figures below, paying you correctly, and answering a dispute about a job</td></tr>
+    <tr><td>The share of jobs you complete and the share you start on time, with the number of jobs each was counted over</td><td>Deciding whether to keep offering you work &mdash; the automated decision described in section 9</td></tr>
+    <tr><td>Fees charged to you: what was charged, for which booking, why, the commission rate applied, how much has been set against your earnings, and whether it was waived or refunded</td><td>Charging the fee published in section 9 of the Cleaner Agreement, showing you and our support team what is owed, and evidencing a waiver</td></tr>
+    <tr><td>Reports that a Customer was not there: your location and the time when you tell the Customer you have arrived and when you make the report, the photograph of the entrance you take, and the Customer's access instructions as they stood at that moment</td><td>Evidencing the report so that a member of our team can decide it &mdash; whether the Customer keeps paying the fee in the Terms of Service and you are paid your share. Your location is read at those two moments only, when you tap, and never in the background</td></tr>
+  </tbody>
+</table>
+
+<h3>Data collected automatically</h3>
+<table>
+  <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>IP address and browser/device identifier ("user agent")</td><td>Security, fraud prevention, and evidencing your consent to our legal documents</td></tr>
+    <tr><td>Device type, OS version</td><td>App compatibility and debugging</td></tr>
+    <tr><td>App usage and audit records (e.g. logins, bookings, account changes)</td><td>Security, fraud prevention, and dispute resolution</td></tr>
+    <tr><td>Push notification token</td><td>Sending booking updates (only with your consent)</td></tr>
+    <tr><td>Crash and error reports</td><td>Bug fixing (via Sentry &mdash; configured not to attach your identity or IP address by default)</td></tr>
+    <tr><td>AI analysis results of your photos</td><td>Producing and explaining your quote</td></tr>
+  </tbody>
+</table>
+
+<h2>3. Legal Basis for Processing</h2>
+<p>Under UK GDPR, we process your data on the following legal bases:</p>
+<table>
+  <thead><tr><th>Legal Basis</th><th>What It Covers</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Contract</strong> (Article 6(1)(b))</td><td>Processing necessary to provide our services: account management, quote generation, booking processing, payments, communication between users, deciding a report that a Customer was not at the property and charging or paying the fee that follows</td></tr>
+    <tr><td><strong>Legitimate Interest</strong> (Article 6(1)(f))</td><td>Fraud prevention, security measures, platform improvement, Cleaner vetting, enforcing our Terms, and screening content for illegal and abusive material before it reaches another user</td></tr>
+    <tr><td><strong>Legal Obligation</strong> (Article 6(1)(c))</td><td>Tax record keeping (HMRC), annual digital-platform reporting of Cleaner earnings under the Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023; right-to-work checks on Cleaners before we offer their details to Customers, which UK immigration law (the Immigration, Asylum and Nationality Act 2006, extended to online matching services by section 48 of the Border Security, Asylum and Immigration Act 2025) requires of us from 1 October 2026; responding to lawful data requests</td></tr>
+    <tr><td><strong>Consent</strong> (Article 6(1)(a))</td><td>Marketing communications, optional push notifications, cookies (non-essential)</td></tr>
+  </tbody>
+</table>
+<p>Where we rely on consent, you can withdraw it at any time by updating your preferences in the app or contacting us. Withdrawal does not affect the lawfulness of processing before withdrawal.</p>
+<p><strong>Criminal-records data (Cleaners).</strong> A Basic DBS certificate contains criminal-offence data, which we process under Article 10 UK GDPR and Schedule 1 of the Data Protection Act 2018 (conditions relating to protecting the public and safeguarding). We use it solely to vet Cleaners before they can accept jobs; it is reviewed by our team, stored in private storage, and never shared with Customers.</p>
+
+<h2>4. How We Share Your Data</h2>
+<p>We share your personal data with the following service providers, only to the extent necessary to provide our services:</p>
+<table>
+  <thead><tr><th>Provider</th><th>Purpose</th><th>Data Shared</th><th>Location</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Amazon Web Services</strong></td><td>Database and file storage (private, access via short-lived signed links only)</td><td>All account data; property photos, avatars, verification documents, data exports</td><td>EU (Stockholm, eu-north-1)</td></tr>
+    <tr><td><strong>Railway</strong></td><td>Hosting of our backend application</td><td>All data processed by the platform transits our Railway-hosted servers</td><td>US*</td></tr>
+    <tr><td><strong>Vercel</strong></td><td>Hosting of the web app</td><td>Connection data of web visitors (IP address, request logs); no account data is stored there</td><td>US*</td></tr>
+    <tr><td><strong>Stripe</strong></td><td>Payment processing; Cleaner payout accounts</td><td>Customers: card details go from your device directly to Stripe together with the booking amount &mdash; we only hold Stripe reference IDs. Cleaners: Stripe collects your identity and bank details itself for payout onboarding (acting as its own data controller for that information)</td><td>US*</td></tr>
+    <tr><td><strong>Google (Gemini AI)</strong></td><td>AI quote generation</td><td>Your property photos, room labels and photo notes</td><td>US*</td></tr>
+    <tr><td><strong>OpenAI</strong></td><td>Photo validation (checking your photos match the declared room), and <strong>content safety screening</strong> &mdash; see the row below</td><td>Your property photos (via short-lived links) and room labels</td><td>US*</td></tr>
+    <tr><td><strong>OpenAI</strong> (content safety)</td><td>Screening what you write and upload for illegal and abusive content, before it is published to anyone. This is how we meet our duties under the Online Safety Act 2023</td><td>The text of messages, reviews, complaints and replies, job descriptions and notes, and Cleaner profile descriptions; and the images you upload as an avatar, in a message, with a complaint, or of a room. Two things are deliberately excluded and are screened only by a list held on our own servers, never sent anywhere: your <strong>display name</strong> and your <strong>property access instructions</strong></td><td>US*</td></tr>
+    <tr><td><strong>Amazon SES</strong> (Amazon Web Services)</td><td>Sending our emails, and recording the delivery reports the receiving mail servers send back &mdash; a bounce or a spam complaint &mdash; so that we stop writing to an address that does not work</td><td>Email address, name, verification codes, booking details; whether a message was delivered, bounced or reported</td><td>EU (Stockholm, eu-north-1)</td></tr>
+    <tr><td><strong>Expo</strong></td><td>Push notification delivery (relayed to Apple/Google)</td><td>Device push token and notification content (e.g. Cleaner first name, booking dates, amounts)</td><td>US*</td></tr>
+    <tr><td><strong>Sentry</strong></td><td>Crash and error reporting</td><td>Technical error data; configured not to attach your identity or IP address by default</td><td>US*</td></tr>
+    <tr><td><strong>Google / Apple</strong></td><td>Social sign-in (only if you choose it)</td><td>Sign-in event; we receive your email and name from them</td><td>US*</td></tr>
+    <tr><td><strong>Twilio</strong></td><td>SMS verification (not currently active; will apply if we enable SMS)</td><td>Phone number, verification code</td><td>US*</td></tr>
+    <tr><td><strong>Right-to-work digital verification service</strong> (provider to be named here before use)</td><td>Checking a British or Irish passport or passport card and that it belongs to you, for a Cleaner who chooses this route instead of showing us the original document (not currently active; will apply once we have appointed a provider registered with the government's Office for Digital Identities and Attributes, and we will name it here first)</td><td>The provider collects your passport and a scan of your face itself, from your device, as its own data controller, and sends us the outcome and a copy of the check to keep as the law requires</td><td>UK*</td></tr>
+  </tbody>
+</table>
+<p>* Where data is transferred to providers in the United States or otherwise outside the UK, we rely on UK-approved transfer safeguards: the UK Extension to the EU-US Data Privacy Framework (the "UK-US Data Bridge") where the provider is certified under it, and otherwise the UK International Data Transfer Agreement or the UK Addendum to the EU Standard Contractual Clauses.</p>
+
+<h3>Other Sharing</h3>
+<ul>
+  <li><strong>Between Users:</strong> Once a Cleaner is assigned to your booking, we share limited details between the Customer and Cleaner (name, phone number, property address and any access/pet/parking notes) to enable the service. Phone numbers are exchanged in both directions, and only while the job is live — from the moment a Cleaner is assigned until the job is completed or cancelled; after that you can still reach each other through in-app messages.</li>
+  <li><strong>Offering a job to Cleaners:</strong> Before any Cleaner is assigned, we show your job to verified Cleaners whose service area covers it. They see the type of clean, the town, <em>part</em> of your postcode, the date and time slot, the number of rooms and photos, the price, and the description you wrote — they do <em>not</em> see your name, your street address, your full postcode, your phone number or your photos. Please avoid putting access details (such as where a key is kept) in the description, as that description is shown to Cleaners who have not yet been given your job.</li>
+  <li><strong>Content safety screening:</strong> Everything you write or upload is checked before it is published, so that illegal and abusive content does not reach the person it is aimed at. Two layers do this: a list held on our own servers, and an automated classifier run by OpenAI. If content is refused you are told; some content is published and placed in a queue for a member of our team to look at. We rely on our <strong>legitimate interest</strong> in keeping users safe and on our legal obligations under the Online Safety Act 2023 &mdash; not on your consent, so this is not something you can switch off while using the Platform. We do not use what you write to train anyone's AI models.</li>
+  <li><strong>Reports and blocks:</strong> If you report a message, a review or a person, we record what you reported, the reason you chose, anything you wrote, and a copy of the reported content as it stood at that moment (so it can still be judged if the author later changes or deletes it). A member of our team reads it, and we keep what we decided and why. We never tell the person you reported who reported them. If you block someone, we record that so the two of you are never matched again &mdash; if you delete your account, that instruction survives, but anything you wrote about them does not.</li>
+  <li><strong>Complaints about a job:</strong> If you raise a complaint &mdash; as a Customer about the clean, or as a Cleaner about the job &mdash; what you write and any photos you attach are shown to our team and to the other person involved, because we reach a decision by hearing both sides. Their reply is shown to you for the same reason. Neither of you is given the other's contact details through a complaint: it carries the account of what happened, not an address or a phone number.</li>
+  <li><strong>If a Cleaner reports that you were not there:</strong> the report &mdash; the times, the Cleaner's location at those moments, the photograph of your entrance and your access instructions as they stood &mdash; is seen by our team, who decide it. If you dispute the charge through the in-app complaint or by email, we put what the report contains &mdash; the times, how far from your property the Cleaner was, and the photograph &mdash; in your complaint thread and send it to you by email, so that you can answer it; what you write in that complaint is shown to the Cleaner, as for any complaint. If the outcome changes because of what you told us, the Cleaner is told the reason.</li>
+  <li><strong>HMRC (Cleaners only):</strong> As a digital platform we are required to report Cleaners' identity (name, date of birth, National Insurance number, address) and yearly earnings to HMRC under the Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023, which implement the OECD Model Reporting Rules (the UK equivalent of the EU's "DAC7").</li>
+  <li><strong>Legal Requirements:</strong> We may disclose data if required by law, court order, or government regulation.</li>
+  <li><strong>Business Transfer:</strong> If CleanSnap is acquired or merged, your data may be transferred to the new entity. We will notify you of any such transfer.</li>
+</ul>
+<p>We never sell your personal data to third parties, and we do not use your photos or content to train AI models.</p>
+
+<h2>5. How Long We Keep Your Data</h2>
+<table>
+  <thead><tr><th>Data Type</th><th>Retention Period</th></tr></thead>
+  <tbody>
+    <tr><td>Active account data</td><td>For as long as your account is active</td></tr>
+    <tr><td>Account deletion</td><td>When you request deletion, your account is deactivated immediately and permanently anonymised after a 30-day cooling-off period (during which you can cancel the request)</td></tr>
+    <tr><td>Financial records (payments, earnings)</td><td>7 years after the transaction (HMRC requirement) &mdash; these survive account deletion but are no longer linked to a usable identity</td></tr>
+    <tr><td>The yearly report we file with HMRC (Cleaners only)</td><td>6 years from the end of the tax year it covers, then the file is deleted in full. Unlike the financial records above, this one <strong>does</strong> identify you: it is a single document for the whole year covering every Cleaner we report, and it contains your name, date of birth, home address and National Insurance number. We keep it to comply with the Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023. Because it is one document covering everyone, deleting your account does not take you out of a report that has already been filed &mdash; we keep it under Article 17(3)(b) UK GDPR (processing necessary to comply with a legal obligation) until that period ends. Nothing else about you is kept because of it: your account record is anonymised on the normal schedule above</td></tr>
+    <tr><td>Consent records</td><td>7 years (to demonstrate compliance). When your account is deleted, the record of what you accepted and when is kept, but the technical identifiers on it (IP address, device information) are removed and your account record itself is anonymised</td></tr>
+    <tr><td>Security audit records</td><td>Kept while relevant for security, fraud prevention and legal purposes; unlinked from your identity when your account is deleted</td></tr>
+    <tr><td>Property photos</td><td>Kept while your account is active so past bookings can be reviewed; photos from abandoned quote attempts are deleted after 7 days; all photos are deleted when your account is deleted</td></tr>
+    <tr><td>Reports of content or conduct</td><td>2 years from the date the report is closed, so we can recognise repeat behaviour and answer a regulator or a court. If either person involved deletes their account before then, the record of the decision is kept but the words are removed: the copy of the reported content and anything the reporter wrote are erased at that point</td></tr>
+    <tr><td>Complaints about a job, including replies and any photos submitted as evidence</td><td>Kept with the booking they belong to, so a decision can be explained or revisited. If you delete your account, the record that a complaint was made and how it was decided is kept, but your words and your photos are erased at that point &mdash; the photos are deleted from storage too</td></tr>
+    <tr><td>Blocks</td><td>Until you remove the block. It survives account deletion (the two of you must not be matched again), but any reason you wrote is erased</td></tr>
+    <tr><td>Engagement records and the two figures derived from them (Cleaners only)</td><td>Kept with your Cleaner profile for as long as it exists. If you delete your account the profile is anonymised rather than removed, and these records stay attached to it: they name a booking, a date and an outcome, and after anonymisation they are no longer linked to a usable identity. We keep them because they are the evidence behind a decision you are entitled to contest</td></tr>
+    <tr><td>Fees charged to a Cleaner, and the record of any waiver or refund</td><td>7 years, as a financial record, on the same basis as payments and earnings above &mdash; they survive account deletion and are no longer linked to a usable identity</td></tr>
+    <tr><td>Right-to-work check (Cleaners only)</td><td>The copy of the page the government service showed us when we checked your share code (it carries your name, your photograph and the date of the check) or, if you are a British or Irish citizen, the copy of your passport or of the other documents we checked, with the dated record of our check and any end date of your permission, is kept for as long as you are registered with us as a Cleaner and for two years after your account is closed, and is then securely destroyed. From 1 October 2026 UK immigration law treats an online matching service like ours as your employer for right-to-work purposes and requires whoever makes the check to keep this copy for exactly that period; like the HMRC report above, it is kept under Article 17(3)(b) UK GDPR and is not removed when your account is anonymised. The outcome and date of the check stay on your anonymised profile. Your share code is not kept once the check has been made</td></tr>
+    <tr><td>Reports that a Customer was not there (locations, times, photograph, access instructions as they stood)</td><td>Kept with the booking they belong to, so the charge and the decision can be explained or revisited, and so that we can answer a card dispute about the charge. If either of you deletes their account, the decision is kept but the location data, the photograph and the copy of the access instructions are erased at that point &mdash; the photograph is deleted from storage too</td></tr>
+    <tr><td>In-app notifications</td><td>90 days</td></tr>
+    <tr><td>Data export files (subject access)</td><td>7 days, then permanently deleted from storage</td></tr>
+    <tr><td>Verification and password-reset codes</td><td>Valid for up to 1 hour; purged within 48 hours of expiry</td></tr>
+    <tr><td>Login sessions</td><td>Access tokens last 15 minutes; refresh tokens last 7 days and are revoked immediately if you request account deletion</td></tr>
+    <tr><td>Addresses we have stopped emailing</td><td>If your address rejects our email or reports it as spam, we record the address and stop writing to it. The record is kept for as long as the address is suppressed &mdash; including after account deletion, because the whole purpose of it is not to write to a mailbox that has told us to stop</td></tr>
+    <tr><td>Marketing preferences</td><td>Until you withdraw consent or delete your account</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Your Rights</h2>
+<p>Under UK GDPR, you have the following rights regarding your personal data:</p>
+<ul>
+  <li><strong>Right of Access</strong> &mdash; Request a copy of the personal data we hold about you. You can generate a data export directly in the app.</li>
+  <li><strong>Right to Rectification</strong> &mdash; Request correction of inaccurate or incomplete data. You can update most data directly in the app.</li>
+  <li><strong>Right to Erasure ("Right to be Forgotten")</strong> &mdash; Request deletion of your data directly in the app or by contacting us. Subject to legal retention obligations (e.g., financial records for HMRC).</li>
+  <li><strong>Right to Data Portability</strong> &mdash; Request your data in a structured, machine-readable format (the in-app export provides this as JSON).</li>
+  <li><strong>Right to Restrict Processing</strong> &mdash; Request that we limit how we use your data in certain circumstances.</li>
+  <li><strong>Right to Object</strong> &mdash; Object to processing based on legitimate interests or for direct marketing.</li>
+  <li><strong>Right to Withdraw Consent</strong> &mdash; Where processing is based on consent, withdraw it at any time.</li>
+</ul>
+<p>To exercise any of these rights, contact us at <a href="mailto:support@cleansnap.co.uk">support@cleansnap.co.uk</a>. We will respond within <strong>one calendar month</strong>.</p>
+<p>If you are unsatisfied with our response, you have the right to complain to the <strong>Information Commissioner's Office (ICO)</strong>:</p>
+<ul>
+  <li>Website: <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">ico.org.uk</a></li>
+  <li>Phone: 0303 123 1113</li>
+</ul>
+
+<h2>7. Data Security</h2>
+<p>We take the security of your data seriously and implement appropriate technical and organisational measures, including:</p>
+<ul>
+  <li>AES-256-GCM encryption at rest for the most sensitive fields (National Insurance numbers, right-to-work share codes while a check is pending, two-factor secrets)</li>
+  <li>TLS/HTTPS for all data in transit (including our database connections)</li>
+  <li>Private file storage: photos and documents are never public and are only accessible through short-lived signed links</li>
+  <li>Data export files are encrypted at rest in storage</li>
+  <li>Bcrypt password hashing (12 rounds)</li>
+  <li>JWT-based authentication with short-lived tokens and rotation</li>
+  <li>Mandatory two-factor authentication for administrator accounts</li>
+  <li>Account lockout after repeated failed login attempts and rate limiting on all public endpoints</li>
+  <li>Automatic redaction of sensitive fields in application logs</li>
+  <li>Role-based access controls and per-user data isolation</li>
+</ul>
+<p>No system is 100% secure. If we become aware of a personal data breach that is likely to result in a risk to your rights, we will notify the ICO within 72 hours as required by law, and we will inform you without undue delay where the breach is likely to result in a high risk to you.</p>
+
+<h2>8. Children's Data</h2>
+<p>CleanSnap is not intended for anyone under the age of 18. Customers confirm they are 18 or over when they create an account; Cleaners give us their date of birth, which we check, because they enter people&rsquo;s homes. We do not knowingly collect personal data from anyone under 18. If you believe someone under 18 has provided us with personal data, please contact us and we will delete it promptly.</p>
+
+<h2>9. Automated Decision-Making</h2>
+<p>We use AI to generate cleaning price quotes from the photos you upload (Google Gemini) and to check that your photos match the declared rooms (OpenAI). These are automated processes that produce a price estimate and photo-quality feedback. You are not obligated to accept any AI-generated quote, the assigned Cleaner may propose an adjusted price which you can accept or reject, and you can contact us if you believe a quote is inaccurate.</p>
+<p>We also use automated ranking to suggest available Cleaners for a booking (based on factors such as distance, availability and ratings). Customers remain free to choose a different Cleaner.</p>
+<p>Neither the quote nor the ranking produces legal effects or similarly significantly affects you within the meaning of UK GDPR Article 22. The decision described next does, and we treat it as one.</p>
+<p><strong>Two decisions we make by hand.</strong> Whether a report that a Customer was not at the property is upheld, and whether a Cleaner's right to work is confirmed, are each decided by a member of our team on the evidence described in section 2 &mdash; never automatically. When such a report is made, 50% of the booking total is charged to the Customer's card at once, before that decision, because a card authorisation does not last long enough to wait for it; the charge is refunded in full if the report is not upheld.</p>
+
+<h3>Cleaners: the automated decision that can stop new work being offered to you</h3>
+<p>This section applies only if you are a Cleaner. It describes a decision we make about you by automated means, with no person involved in making it, and we set it out here in full rather than argue about whether Article 22 covers it &mdash; it decides whether you are offered work, so we treat it as covered.</p>
+<p><strong>What we record.</strong> Every job you accept is recorded as an engagement: which booking it was, how you came by it, when you accepted it, when you started it, whether that start was inside the time slot the Customer agreed to, and how the engagement ended. From those records we keep two figures on your profile: the share of the jobs you complete, and the share you start within the agreed slot, each with the number of jobs it was counted over.</p>
+<p><strong>The logic.</strong> If either figure falls below <strong>50%</strong> &mdash; each one counted only once there are at least <strong>three</strong> jobs to judge it on, so a single bad day never triggers it &mdash; the platform stops putting you forward. Jobs a Customer cancelled, jobs whose price you and the Customer did not agree, jobs where the Customer was not there, and jobs closed by us are excluded from the figures and do not count against you.</p>
+<p><strong>What happens.</strong> You stop appearing in Customer search results, you are no longer assigned to jobs automatically, and the job pool neither lists work to you nor lets you claim it. It is not a suspension and not a termination: your account, your login and every job you have already accepted are untouched, and carrying those out is what brings the figure back up and restores you automatically, with no application and no decision by us. We tell you when it happens and which of the two figures caused it.</p>
+<p><strong>Your rights over this decision.</strong> You can ask a person to look at it, put your side of it, and contest the outcome: write to <strong>support@cleansnap.co.uk</strong>. A member of our team will review the underlying records and can correct or set aside the result. You also have the right to be told the reasoning, which is the paragraph above, and to ask us to correct any engagement record you believe is wrong.</p>
+<p><strong>Why we are allowed to do it.</strong> Article 22(2)(a) UK GDPR: the decision is necessary for the performance of the contract between you and us. Section 9 of the Cleaner Agreement, which you accept before you can take work, states the same rule in the same terms. It uses no special category data and no profiling of anything other than the two figures described above.</p>
+
+<h2>10. Cookies</h2>
+<p>Our mobile application uses limited local storage for functionality (authentication tokens, preferences). For details on cookies used on our website, please see our <strong>Cookie Policy</strong>.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will notify you of material changes through the app and ask you to review and accept the updated policy. The version and "Last updated" date at the bottom of this policy indicate when it was last revised.</p>
+
+<p><em>Version 1.7 &mdash; Last updated: 19 September 2026</em></p>
+      <!-- legal-snapshot:end -->
     </div>
 
     <p class="mt-12 text-sm text-gray-500 border-t border-gray-200 pt-6">

@@ -9,9 +9,15 @@
  * linked them straight at the JSON API, so a visitor clicking "Terms of
  * Service" got 19 KB of escaped markup.
  *
- * So there is no copy here. The page fetches the active version at load time,
- * which means publishing a new version through `seed-legal` updates the website
- * with no deploy — and makes divergence impossible rather than unlikely.
+ * So the text is never written by hand here. Since 2026-11-23 each page holds a
+ * copy of the version in force, written by `tools/snapshot-legal.mjs` from the
+ * same endpoint, because a page that is empty until JavaScript runs is empty for
+ * every reader that does not run it, and for everyone while the API is down.
+ * This script still asks the API on every visit: if the version in force is not
+ * the one in the page, it replaces the copy, so a new version published through
+ * `seed-legal` reaches every visitor with JavaScript at once. Readers without it
+ * get the new text when the snapshot is re-run and the site deployed, and
+ * `node tools/snapshot-legal.mjs --check` says when that is due.
  */
 (function () {
   'use strict';
@@ -99,8 +105,11 @@
     var target = document.getElementById('legal-content');
     var meta = document.getElementById('legal-meta');
     if (!target) return;
+    // The version tools/snapshot-legal.mjs wrote into the page; empty if none.
+    var snapshot = target.getAttribute('data-version') || '';
 
-    fetch(API + encodeURIComponent(type), { headers: { Accept: 'application/json' } })
+    // Returned so a test can wait for it; the pages ignore it.
+    return fetch(API + encodeURIComponent(type), { headers: { Accept: 'application/json' } })
       .then(function (response) {
         if (!response.ok) throw new Error('HTTP ' + response.status);
         return response.json();
@@ -109,20 +118,35 @@
         var doc = payload && payload.data;
         if (!doc || !doc.content) throw new Error('no content');
 
-        target.innerHTML = sanitise(doc.content);
+        // The page already holds the version in force: nothing to redraw.
+        if (snapshot && String(doc.version) === snapshot) return;
 
-        if (meta && doc.version) {
+        target.innerHTML = sanitise(doc.content);
+        target.setAttribute('data-version', doc.version ? String(doc.version) : '');
+
+        if (meta) {
           var published = doc.publishedAt ? new Date(doc.publishedAt) : null;
-          meta.textContent =
-            'Version ' +
-            doc.version +
-            (published && !isNaN(published.getTime())
-              ? ' — in force since ' +
-                published.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
-              : '');
+          // London's day, as in the snapshot: a visitor's own time zone must
+          // not move the date a contract came into force.
+          meta.textContent = doc.version
+            ? 'Version ' +
+              doc.version +
+              (published && !isNaN(published.getTime())
+                ? ' — in force since ' +
+                  published.toLocaleDateString('en-GB', {
+                    day: 'numeric',
+                    month: 'long',
+                    year: 'numeric',
+                    timeZone: 'Europe/London',
+                  })
+                : '')
+            : '';
         }
       })
       .catch(function () {
+        // A copy in the page beats a failure box: it is the version that was in
+        // force when the site was last published, and it says which one it is.
+        if (snapshot) return;
         renderError(target, title, meta);
       });
   };
